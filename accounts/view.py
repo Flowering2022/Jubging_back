@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .Serializer import UserGetSerializer, UserPostSerializer
-from django.http.response import HttpResponse, Http404
+from django.http.response import Http404
 from .models import User
 
 
