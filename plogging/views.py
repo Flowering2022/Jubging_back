@@ -10,3 +10,5 @@ class PloggingLogAPI(APIView):
         queryset = PloggingLog.objects.filter(userid=pk)
         user_total_distance = queryset.aggregate(Sum('distance'))
         return Response(user_total_distance)
+
+
