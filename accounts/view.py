@@ -48,3 +48,4 @@ class UserDetail(APIView):
 
 def testindex(request):
     return HttpResponse('testing server')
+
