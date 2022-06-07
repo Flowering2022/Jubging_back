@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .Serializer import UserGetSerializer, UserPostSerializer
-from django.http.response import Http404
+from django.http.response import Http404, HttpResponse
 from .models import User
 
 
@@ -45,3 +45,6 @@ class UserDetail(APIView):
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
+def testindex(request):
+    return HttpResponse('testing server')
