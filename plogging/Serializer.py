@@ -7,3 +7,9 @@ class ploggingGetSerializer(serializers.ModelSerializer):
     class Meta:
         model = PloggingLog
         fields = '__all__'
+
+
+class ploggingPostSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PloggingLog
+        fields = ['userid', 'distance', 'starttime', 'endtime']
