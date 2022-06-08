@@ -12,4 +12,4 @@ class ploggingGetSerializer(serializers.ModelSerializer):
 class ploggingPostSerializer(serializers.ModelSerializer):
     class Meta:
         model = PloggingLog
-        fields = ['userid', 'distance', 'starttime', 'endtime']
+        fields = ['userid', 'distance', 'runningtime']
